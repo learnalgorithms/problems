@@ -8,9 +8,9 @@ func main() {
 
 func reverseString(str string) string {
 	strLen := len(str)
-	strByte := make([]byte, strLen)
+	strByte := make([]rune, strLen)
 	for idx, r := range str {
-		strByte[strLen-1-idx] = byte(r)
+		strByte[strLen-1-idx] = r
 	}
 	return string(strByte)
 }
